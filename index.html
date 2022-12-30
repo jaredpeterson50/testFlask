@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="myscripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getStores()">printstores</button>
+    <h1>List of current stores</h1>
+    <div id="storeList"></div>
+    <h1>Add new Store</h1>
+    <button onclick ="addStore()">addStore</button>
+    <input type="text" id="storeName" placeholder="enter store name">
+    <div id="addStoreDiv"></div>
+    <h1>Add item to an existing store</h1>
+    <button onclick="addItem()">add Item to existing store</button>
+    <input type="text" id="existingStoreName" placeholder="enter existing store name">
+    <input type="text" id="addItemName" placeholder="enter Item name">
+    <input type="text" id="addItemPrice" placeholder="enter Item price">
+    <div id = "addItemDiv"></div>
+</body>
+</html>
