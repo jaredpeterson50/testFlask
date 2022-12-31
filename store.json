@@ -1,0 +1,55 @@
+{
+    "stores": [
+        {
+            "name": "beautiful store",
+            "items": [
+                {
+                    "name": "flowers",
+                    "price": "100"
+                }
+            ]
+        },
+        {
+            "name": "beautiful store 2",
+            "items": [
+                {
+                    "name": "books",
+                    "price": "100"
+                }
+            ]
+        },
+        {
+            "name": "my store",
+            "items": [
+                {
+                    "name": "kl",
+                    "price": "l"
+                },
+                {
+                    "name": "k2",
+                    "price": "l54"
+                }
+            ]
+        },
+        {
+            "name": "my other store",
+            "items": []
+        },
+        {
+            "name": "new store",
+            "items": []
+        },
+        {
+            "name": "new store2",
+            "items": []
+        },
+        {
+            "name": "new store3",
+            "items": []
+        },
+        {
+            "name": "",
+            "items": []
+        }
+    ]
+}

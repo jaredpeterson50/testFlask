@@ -6,8 +6,6 @@ async function getStores(){
     console.log("get stores");
     var res = await fetch('http://127.0.0.1:5000/store');
     var res_json = await res.json();
-    console.log(res_json.stores);
-    console.log(res_json.stores.length);
     document.getElementById('storeList').innerHTML= JSON.stringify(res_json);
 }
 
@@ -68,8 +66,9 @@ async function addItem(){
         body: JSON.stringify(data) // body data type must match "Content-Type" header
       });
       if(response.status == 200){
-        document.getElementById('addItemDiv').innerHTML = "successfully added " + data.name + " at a price of " 
-        + data.price + " to store " + store;
+        var message = await response.json()
+        var message_str = JSON.stringify(message)
+        document.getElementById('addItemDiv').innerHTML = message_str;
       }
       else{
         document.getElementById('addItemDiv').innerHTML = "error processing request";
